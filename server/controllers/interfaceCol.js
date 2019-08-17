@@ -74,7 +74,8 @@ class interfaceColController extends baseController {
         return (ctx.body = yapi.commons.resReturn(null, 400, '项目id不能为空'));
       }
       if (!params.parent_id) {
-        return (ctx.body = yapi.commons.resReturn(null, 400, '父集合id不能为空'));
+          params.parent_id=-1;
+       // return (ctx.body = yapi.commons.resReturn(null, 400, '父集合id不能为空'));
       }
       if (!params.name) {
         return (ctx.body = yapi.commons.resReturn(null, 400, '名称不能为空'));

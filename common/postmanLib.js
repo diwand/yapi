@@ -354,7 +354,7 @@ async function crossRequest(defaultOptions, preScript, afterScript,case_pre_scri
         if(options.data) {
           Object.keys(options.data).map(function (key) {
             if (Array.isArray(options.data[key])) {
-              options.data[key] = options.data[key][0];
+            //  options.data[key] = options.data[key][0];
             }
           })
         }
